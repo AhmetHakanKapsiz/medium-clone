@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 100%;
+    z-index: 1;
+}
+
+header {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(250, 192, 23);
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+header.transition {
+    background: white;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div>span {
+    font-size: 2em;
+    padding: 0 10px;
+}
+
+header>div .get-started a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+header.transition>div .get-started a {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+header .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ol li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header>div>div {
+    margin: 0 10px;
+}
+
+.section1 {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(250, 192, 23);
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.section1>div:first-child {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.section1>div:first-child>* {
+    margin: 20px 0 0 0;
+}
+
+.section1>div:last-child {
+    padding-bottom: 20px;
+}
+
+.section1>div.image-3d {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1>div:first-child>span {
+    font-size: 5em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.section1>div:first-child>p {
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.section1>div:first-child>p>a {
+    text-decoration: underline;
+}
+
+.section1>div a {
+    color: black;
+}
+
+.section1>div:first-child>a {
+    background-color: rgb(250, 192, 23);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.section2 {
+    width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(245, 229, 229);
+    position: relative;
+    flex-direction: column;
+}
+
+.section2>div:first-child {
+    font-weight: 600;
+    font-size: 0.75em;
+    width: 100%;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+.section2>div:nth-child(2) {
+    padding: 10px 0;
+}
+
+.section2>.trend-articles {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.trend-articles>.article-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 33%;
+    margin: 20px 0 0 0;
+}
+
+.article-card>span {
+    font-size: 2em;
+    color: rgb(223, 224, 224);
+    font-weight: 900;
+}
+
+.article-card>.article-body {
+    margin: 10px 5px 0 25px;
+}
+
+.article-card>.article-body>div:first-child {
+    font-size: 1em;
+}
+
+.article-card>.article-body>div>h3 {
+    font-size: 1em;
+}
+
+.section3 {
+    width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(245, 229, 229);
+    position: relative;
+    flex-direction: row;
+}
+
+.articles {
+    width: 65%;
+    margin-right: 50px;
+}
+
+.article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.article>.article-left {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.article-left>.article-from {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.article-left>.article-from>* {
+    margin-right: 10px;
+}
+
+.article-left>div {
+    margin: 5px 0;
+}
+
+.article-left>.article-content {
+    font-weight: 300;
+    color: rgb(70, 67, 70);
+}
+
+.article-left>.article-footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.article-footer>.footer-left>* {
+    padding: 0 2px;
+}
+
+.article>.article-right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.article-right img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.keywords {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(224, 223, 223);
+    padding-bottom: 20px;
+}
+
+.keywords>h3 {
+    font-size: 0.9em;
+}
+
+.keywords>.keyword-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.keyword-btns>a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid rgb(214, 211, 211);
+    padding: 10px 15px;
+    font-size: 0.85em;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.keywords>a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: green;
+}
+
+@media (max-width:1004px) {
+    header>div>div:first-child {
+        display: none;
+    }
+    .section1>.image-3d>img {
+        width: 300px;
+        height: 280px;
+    }
+    .section3 {
+        flex-direction: column-reverse;
+    }
+    .articles {
+        width: 100%;
+        margin-right: 0;
+    }
+    .keywords {
+        width: 100%;
+        margin: 20px 0 50px 0;
+    }
+}
+
+@media (max-width:783px) {
+    header, .section1, .section2, .section3 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .trend-articles>.article-card {
+        width: 50%;
+    }
+    .section1>div.image-3d {
+        display: none;
+    }
+}
+
+@media (max-width:592px) {
+    .trend-articles>.article-card {
+        width: 100%;
+    }
+    .article>.article-left {
+        width: 60%
+    }
+    .article>.article-right {
+        width: 40%
+    }
+}
